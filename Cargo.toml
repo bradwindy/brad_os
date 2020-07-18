@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 bootloader = "0.9.8"
+rlibc = "1.0.0"
 
 [profile.dev]
 panic = "abort"
@@ -14,5 +15,5 @@ panic = "abort"
 panic = "abort"
 
 [package.metadata.bootimage]
-build-command = ["xbuild"]
+build-command = ["build"]
 run-command = ["qemu-system-x86_64", "-drive", "format=raw,file=target/x86_64-brad_os/debug/bootimage-brad_os.bin"]
