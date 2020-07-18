@@ -1,2 +1,7 @@
+# This is a TOML file, but I can't append it with the correct extension as xbuild/bootimage/bootrunner look for this file without the extension
+
 [build]
 target = "x86_64-brad_os.json"
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"
