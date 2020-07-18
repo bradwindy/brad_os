@@ -21,3 +21,7 @@ Running `cargo bootimage` should create a boot image that can be written to a US
 **QEMU must be installed on the host system to run this command**
 
 The command `cargo run` should compile the OS, create a boot image and run it in QEMU.
+
+## Notes
+- All code comments are my own
+- All writing associated with this project is my own
